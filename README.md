@@ -1,5 +1,7 @@
 # research
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/wonmortech/research/badge)](https://scorecard.dev/viewer/?uri=github.com/wonmortech/research)
+
 Reproducible material for the posts published at [wonmor.io/research](https://wonmor.io/research/).
 
 Every long post on wonmor.io ends with a *Reproduce this* box. This repository collects those boxes in one place, one folder per post, so the commands can be copied, run and checked without opening the site. Each folder holds:
