@@ -1,16 +1,37 @@
 # research
 
+Reproducible commands and sources behind 15 posts on [wonmor.io/research](https://wonmor.io/research/): one folder per post, with the exact commands and the commit they run against.
+
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/wonmortech/research/badge)](https://scorecard.dev/viewer/?uri=github.com/wonmortech/research)
+![code: MIT](https://img.shields.io/badge/code-MIT-141413)
+![text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-141413)
 
-Reproducible material for the posts published at [wonmor.io/research](https://wonmor.io/research/).
+**[Website](https://wonmor.io) · [Research](https://wonmor.io/research/) · [Engineering](https://wonmor.io/engineering/)**
 
-Every long post on wonmor.io ends with a *Reproduce this* box. This repository collects those boxes in one place, one folder per post, so the commands can be copied, run and checked without opening the site. Each folder holds:
+## What it is
 
-- `README.md` with the title, a link to the post, what can be reproduced, the exact commands and the sources the post cites;
-- `commands.sh` with the same commands, copied verbatim from the post;
-- any complete query or script the post contains (for example `query.overpassql` for the mosques post).
+- **One folder per post.** `README.md` with the title, the post link, what can be reproduced, the exact commands and the sources the post cites.
+- **Verbatim commands.** `commands.sh` holds the post's *Reproduce this* box, copied as it is.
+- **Full queries and scripts.** Any complete query or script in a post is here too, for example `query.overpassql` for the mosques post.
+- **Pinned commits.** Where a post uses a public repository, the README names it and the exact commit.
+- **Honest about private code.** Where the code behind a post is private, the README says so and lists only what can be checked from public sources.
 
-Where a post pins a public repository, the README names the repository and the exact commit. Where the code behind a post lives in a private repository, the README says so plainly and lists only what can be checked from public sources. Nothing here goes beyond what the post itself states.
+Some posts have a public result you can open right away:
+
+| | |
+|---|---|
+| [![uz-open-data explorer](https://raw.githubusercontent.com/wonmortech/uz-open-data/main/docs/screenshots/map.jpg)](https://wonmor.io/demo/uz-open-data/) | [![deploy-kit: one deploy in eight steps](https://raw.githubusercontent.com/wonmortech/deploy-kit/main/docs/how-it-works.svg)](https://github.com/wonmortech/deploy-kit) |
+| **Mosques from OpenStreetMap.** The dataset is in [uz-open-data](https://github.com/wonmortech/uz-open-data); explore it in the [live demo](https://wonmor.io/demo/uz-open-data/). | **Zero-downtime static deploys.** The flow, generalised, is [deploy-kit](https://github.com/wonmortech/deploy-kit). |
+
+## Quick start
+
+```bash
+git clone https://github.com/wonmortech/research && cd research
+cat posts/mosques-from-openstreetmap/README.md
+bash posts/mosques-from-openstreetmap/commands.sh   # or run the lines one at a time
+```
+
+Some lines start a server or need a specific checkout; the folder README says which.
 
 ## Index
 
